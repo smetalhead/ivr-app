@@ -19,7 +19,6 @@ public interface IAppIvrMapper {
             @Mapping(source = "didIvr", target = "phone"),
             @Mapping(source = "puntoRuteo", target = "routingPoint"),
             @Mapping(source = "entorno", target = "environment"),
-            @Mapping(source = "fechaCreacion", target = "date"),
             @Mapping(source = "estado", target = "state"),
     })
     IvrApp toIvrApp(IvrAplicacion ivrAplicacion);

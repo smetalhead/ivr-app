@@ -4,6 +4,7 @@ package uniremington.com.ivrapp.persistence.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Table(name = "apps")
@@ -17,8 +18,9 @@ public class IvrAplicacion {
     private String didIvr;
     private String puntoRuteo;
     private String entorno;
-    private LocalDateTime fechaCreacion;
+
     private Character estado;
+
 
     public Integer getIdIvrUrl() {
         return idIvrUrl;
@@ -68,13 +70,6 @@ public class IvrAplicacion {
         this.entorno = entorno;
     }
 
-    public LocalDateTime getFechaCreacion() {
-        return fechaCreacion;
-    }
-
-    public void setFechaCreacion(LocalDateTime fechaCreacion) {
-        this.fechaCreacion = fechaCreacion;
-    }
 
     public Character getEstado() {
         return estado;

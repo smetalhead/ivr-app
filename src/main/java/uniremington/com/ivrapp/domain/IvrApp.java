@@ -9,7 +9,6 @@ public class IvrApp {
     private String phone;
     private String routingPoint;
     private String environment;
-    private LocalDateTime date;
 
     private Character state;
 
@@ -59,14 +58,6 @@ public class IvrApp {
 
     public void setEnvironment(String environment) {
         this.environment = environment;
-    }
-
-    public LocalDateTime getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDateTime date) {
-        this.date = date;
     }
 
     public Character getState() {
